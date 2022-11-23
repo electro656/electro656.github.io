@@ -1,0 +1,453 @@
+#project-desc {
+  background-color: blue;
+  box-sizing: border-box;
+}
+
+#nav-bar {
+  margin: 10px 30px 0px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.link-icon,
+.navlink {
+  /* color: black; */
+  color: #fff;
+  text-decoration: none;
+}
+
+.link-icon:hover,
+.navlink:hover {
+  color: #fff;
+}
+
+.link-icon {
+  width: 20px;
+  margin: 0px 5px 0px 0px;
+  padding-bottom: 2.8px;
+}
+
+.navlink {
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+#proj-charter {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 2.5fr 1.8fr;
+  gap: 20px;
+  margin: 20px;
+  margin-bottom: 20px;
+  height: 800px;
+}
+
+.block {
+  background-color: #fff;
+  border: 1px solid black;
+  width: 100%;
+}
+
+.b-4 {
+  grid-area: 2/1/2;
+}
+
+.b-5 {
+  height: 100%;
+  grid-area: 1/3/3/3;
+}
+
+/* .b-1,
+.b-2 {
+  height: 400px;
+}
+
+.b-4,
+.b-5 {
+  height: 200px;
+} */
+
+.block-header {
+  margin: 15px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  color: blue;
+  border-bottom: 1px solid rgb(203, 203, 203);
+}
+
+/* GOALS BLOCK */
+
+.goal-content {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  margin: 0px 20px 10px 20px;
+  border-bottom: 1px solid rgb(203, 203, 203);
+}
+
+.icon-div {
+  font-size: 24px;
+  justify-self: center;
+}
+
+.goal-desc {
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+/* TEAM MEMBER BLOCK */
+
+.member-content {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  margin: 0px 20px 10px 20px;
+  align-self: center;
+}
+
+.member-desc {
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.member-content .icon-div {
+  margin-top: 5px;
+}
+
+/* PRIMARY BLOCK */
+
+.primary-content {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  margin: 0px 20px 10px 20px;
+  align-self: center;
+}
+
+.primary-desc {
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.primary-content .icon-div {
+  margin-top: 5px;
+}
+
+/* SCOPE BLOCK */
+
+#scopes .block-content {
+  display: flex;
+}
+
+.scope-content {
+  margin: 0px 20px 10px 20px;
+  align-self: center;
+}
+
+.scope-desc {
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.scope-desc h4 {
+  padding-bottom: 18px;
+}
+
+/* TIMELINE BLOCK */
+
+.timeline-content {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  margin: 0px 20px 30px 20px;
+  align-self: center;
+}
+
+.timeline-desc {
+  font-size: 16px;
+  margin-left: 2px;
+  padding: 0px 0px 4px 12px;
+  border-bottom: 1px dashed rgb(94, 81, 81);
+}
+
+.timeline-desc p {
+  margin: 5px 0px;
+}
+
+.timeline-desc span {
+  margin-bottom: 10px;
+}
+
+.timeline-content .icon-div {
+  margin-top: 5px;
+}
+
+.number-icon {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(92, 68, 45);
+  border-radius: 50%;
+  font-size: 20px;
+  background: rgb(157, 138, 243);
+  color: #fff;
+}
+
+/* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ */
+
+/* TABLET */
+@media only screen and (max-width: 768px) {
+  #project-desc {
+    margin-bottom: 2350px;
+  }
+
+  #proj-charter {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .b-1 {
+    grid-area: 1/1/1/4;
+  }
+
+  .b-2 {
+    grid-area: 3/1/3/4;
+  }
+
+  .b-3 {
+    grid-area: 4/1/4/4;
+  }
+
+  .b-4 {
+    grid-area: 2/1/2/4;
+  }
+
+  .b-5 {
+    grid-area: 5/1/5/4;
+  }
+
+  /* GOALS BLOCK */
+
+  .goal-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 60%;
+    margin: 0px 20px 15px 20px;
+    /* border-bottom: 1px solid rgb(203, 203, 203); */
+  }
+
+  .goal-desc p {
+    margin-bottom: -5px;
+  }
+
+  /* SCOPES BLOCK */
+  .scope-content {
+    align-self: flex-start;
+  }
+
+  #scopes .block-content {
+    flex-direction: column;
+  }
+
+  /* TEAM MEMBER BLOCK */
+
+  .member-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 60%;
+    margin: 0px 20px 10px 20px;
+    align-self: center;
+  }
+
+  /* PRIMARY BLOCK */
+
+  .primary-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 60%;
+    margin: 0px 20px 10px 20px;
+    align-self: center;
+  }
+
+  .primary-desc {
+    margin-top: 15px;
+  }
+
+  .primary-content .icon-div {
+    margin-top: 0;
+  }
+
+  .primary-desc p {
+    margin-bottom: 0;
+  }
+
+  /* TIMELINE BLOCK */
+
+  .timeline-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 45%;
+    row-gap: 20px;
+    margin: 0px 20px 50px 20px;
+    align-self: center;
+  }
+
+  .timeline-desc {
+    margin-top: -5px;
+    padding: 0px 0px 0px 12px;
+  }
+
+  .number-icon {
+    margin-left: 12px;
+  }
+
+  #proj-charter {
+  }
+}
+
+/* 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+/* MOBILE */
+@media only screen and (max-width: 500px) {
+  #project-desc {
+    margin-bottom: 2210px;
+  }
+
+  #proj-charter {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .icon-div {
+    font-size: 28px;
+  }
+
+  /* GOALS BLOCK */
+
+  .goal-content {
+    height: fit-content;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 90%;
+    margin: 0px 20px 15px 20px;
+    /* border-bottom: 1px solid rgb(203, 203, 203); */
+  }
+
+  .goal-desc p {
+    margin-bottom: 0px;
+  }
+
+  /* SCOPES BLOCK */
+  .scope-content {
+    align-self: flex-start;
+  }
+
+  #scopes .block-content {
+    flex-direction: column;
+  }
+
+  /* TEAM MEMBER BLOCK */
+
+  .member-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 40% 60%;
+    margin: 0px 20px 10px 20px;
+    align-self: center;
+  }
+
+  /* PRIMARY BLOCK */
+
+  .primary-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 60%;
+    margin: 0px 20px 10px 20px;
+    align-self: center;
+  }
+
+  .primary-desc {
+    margin-top: 0px;
+  }
+
+  .primary-content .icon-div {
+    margin-top: 0;
+  }
+
+  .primary-desc p {
+    margin-bottom: 0;
+    margin-top: 10px;
+  }
+
+  .pc-2 {
+    margin-bottom: 40px;
+  }
+
+  /* TIMELINE BLOCK */
+
+  .timeline-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 45%;
+    row-gap: 20px;
+    margin: 0px 20px 20px 20px;
+    align-self: center;
+  }
+
+  .timeline-desc {
+    margin-top: -5px;
+    padding: 0px 0px 0px 12px;
+  }
+
+  .number-icon {
+    margin-left: 12px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  #project-desc {
+    margin-bottom: 2500px;
+  }
+}
